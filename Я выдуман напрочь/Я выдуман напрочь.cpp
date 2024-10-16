@@ -56,7 +56,7 @@ public:
     }
     Complex& operator =(const Complex& it) {
         if (&it == this) {
-            return;
+            return *this;
         }
         ir = it.ir;
         no = it.no;
